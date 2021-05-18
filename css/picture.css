@@ -1,0 +1,93 @@
+.mozi{
+    text-align: center;
+    background: lightskyblue;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 100px;
+}
+
+.mozi h1{
+    padding-top: 23px;
+    font-family: fangsong;
+}
+
+.picture{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+}
+
+.picture img{
+    margin: auto;
+}
+
+.picture h1{
+    width: 230px;
+    font-family: monospace;
+    color: plum;
+    text-shadow: 3px 1px 4px skyblue;
+    padding-top: 10px;
+    font-size: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+.otukimi{
+    /* width: 300px; */
+    margin-right: 100px;
+    text-align: center;
+}
+
+.fancy img{
+    width: 400px;
+}
+
+.fancy{
+    text-align: center;
+    margin-right: 100px;
+}
+
+.gif{
+    /* width: 280px; */
+}
+
+#hover:hover{
+    width: 450px;
+    height: 250px;
+    text-shadow: 2px 2px 2px #ddd;
+}
+
+@media screen and (max-width:1000px) {
+    .mozi{
+        width: 1000px;
+    }
+
+    .picture{
+        display:block;
+        /* width: 300px; */
+    }
+
+    .picture img{
+        width: 500px;
+        max-width: none;
+    }
+
+    .picture h1{
+        width: 500px;
+        font-size: 60px;
+        padding-top: 35px;
+        margin-bottom: 100px;
+    }
+
+    .otukimi{
+        margin-right:auto;
+    }
+
+    .fancy{
+        margin-right:auto;
+    }
+
+    #hover:hover{
+        pointer-events: none;
+    }
+}

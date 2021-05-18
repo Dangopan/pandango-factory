@@ -1,0 +1,430 @@
+body {
+    background-color: rgb(201, 237, 252, 0.2);
+    position: relative;
+}
+
+.wrap {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.menu {
+    width: 100%;
+    padding: 10px 10px 0;
+    margin-bottom:10px;
+    margin-top: 10px;
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    list-style: none;
+    margin: 5px;
+    font-size: 14px;
+    font-family: cursive;
+}
+
+.menu a {
+    text-decoration: none;
+    color: skyblue;
+    text-shadow: 4px 1px 5px lightyellow;
+}
+
+a:hover {
+    color: rgb(11, 56, 153);
+}
+
+.main {
+    max-width: 100%;
+    padding-top: 53%;
+    margin: 0 auto;
+    background-image: url("../img/pandangologo3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 12px 0;
+    position: relative;
+    margin: 0 24px;
+}
+
+#panda {
+    width: 100%;
+    padding-top: 53%;
+    padding:100px;
+    position: absolute;
+    top: 53%;
+    left: 0;
+    background-image: url("../img/pandango透明2.png");
+    background-size: 20%;
+    background-repeat: no-repeat;
+}
+
+.swing-outer:before, .swing-outer:after {
+    content: "";
+    display: table;
+}
+
+.swing-outer:after {
+    clear: both;
+}
+
+.swing {
+    animation: swing linear 7s infinite;
+    float: left;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.informationbox {
+    margin: 0 24px;
+    width: calc(100% -3em);
+    margin-top: 50px;
+}
+
+.information {
+    border: solid 1px gray;
+    margin: auto;
+    border-radius: 15px;
+    background: #FFFFE1;
+    padding: 15px;
+    font-size: large;
+    margin-bottom: 50px;
+}
+
+.information dl{
+    margin-bottom: 0em;
+}
+.information dt {
+    font-weight: bold;
+    float: left;
+}
+
+.information dd {
+    font-size:20px;
+    text-align: center;
+}
+
+.information span {
+    margin-left:20px;
+    color: white;
+    background: crimson;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 0 2px;
+}
+
+.information span {
+    font-family: Beon;
+    /* ネオン風のフォントを指定(ダウンロードしたもの) */
+    animation: flash 2s infinite;
+    /* アニメーションflashを2秒ごとに繰り返す */
+}
+
+@keyframes flash {
+    0%, 100% {
+        /* 明るく光るよう影を重ねる */
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgb(255, 255, 255), 0 0 70px rgb(255, 255, 255), 0 0 80px rgb(255, 255, 255), 0 0 100px rgb(255, 255, 255), 0 0 150px rgb(255, 255, 255);
+    }
+    50% {
+        /* 淡く光るよう影を重ねる */
+        text-shadow: 0 0 10px rgb(255, 85, 85), 0 0 20px rgb(255, 85, 85), 0 0 30px #fcfcfc, 0 0 40px #fcfcfc;
+    }
+}
+
+h1 {
+    font-size: 25px;
+    text-align: center;
+    font-family: serif;
+    color: skyblue;
+}
+
+.information a {
+    text-decoration: none;
+    color: black;
+}
+
+.information a:hover {
+    color: cornflowerblue;
+}
+
+.profile {
+    /* margin-top: 30px;
+    margin: 0 auto;
+    width: calc(100% - 35px); */
+    margin-bottom:100px;
+    margin: 0 24px;
+    width: calc(100% -3em);
+    margin-top: 50px;
+}
+
+.contents {
+    background: radial-gradient(lightyellow, transparent);
+    border-radius: 20px;
+    padding: 0px 20px 35px;
+    margin-top: 30px;
+}
+
+.contents img{
+        display: block;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        background: radial-gradient(lightyellow, transparent);
+        background-image: url("../img/pandango透明 半分.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: auto;
+}
+
+.contents span {
+    color: orange;
+    font-size: 30px;
+    line-height: 70px;
+    font-family: cursive;
+    text-shadow: 2px 3px 1px yellow;
+    text-align: center;
+}
+
+/* .contents span::after {
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(lightyellow, transparent);
+    background-image: url("../img/pandango透明 半分.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
+
+/* .profile img {
+    height: 200px;
+    margin: auto;
+    margin-top: 50px;
+} */
+
+.profile p {
+    font-family: cursive;
+    margin: auto;
+    font-size: 16px;
+}
+
+.profile h1 {
+    position: relative;
+}
+
+.profile h1 span {
+    background-color: rgb(201, 237, 252, 0);
+    padding: 0 10px;
+}
+
+.profile h1::after {
+    display: block;
+    content: "";
+    margin-top: -20px;
+    width: 100%;
+    margin: 0 auto;
+    height: 4px;
+    border-bottom: 3px dashed #87CEEB;
+}
+
+.profile img{
+    display: block;
+    content: "";
+    width: 160px;
+    background-repeat: round;
+    margin-top: 40px;
+}
+
+
+.scrollpanda {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-image: url("../img/scroll-panda.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom:55px;
+    right: 0;
+}
+
+footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background: skyblue;
+    opacity: 0.6;
+}
+
+.footer {
+    font-weight: bold;
+    padding-top: 10px;
+    color: darkslategray;
+    font-family: system-ui;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    float: none;
+    position: static;
+}
+
+@media screen and (min-width:700px){
+ .menu li{
+     font-size:30px;
+ }
+
+ h1{
+    font-size: 40px;
+ }
+}
+
+@media screen and (min-width:500px){
+    .contents{
+        display: flex;
+    }
+}
+
+@media screen and (min-width:1300px){
+    .wrap{
+        max-width: 1200px;
+    }
+    .menu a{
+        font-size:40px;
+    }
+    .informationbox{
+        margin-top: 150px;
+    }
+
+    .information{
+        font-size: 25px;
+    }
+
+    .information span{
+        font-size: 20px;
+        padding: 1px 4px;
+    }
+
+    .information dd{
+        font-size: 25px;
+    }
+    .profile{
+        margin-top: 100px;
+    }
+    .contents{
+        margin-top: 50px;
+    }
+
+    .contents span{
+        font-size: 40px;
+    }
+
+    footer{
+        margin-top: 150px;
+    }
+    #panda{
+        padding: 140px;
+    }
+    .profile p{
+        font-size: 25px;
+    }
+    .profile img{
+        height: 150px;
+        width: 200px;
+    }
+}
+
+@media screen and (min-width:2000px){
+    .wrap{
+        max-width: 1900px;
+    }
+    .menu a{
+        font-size:70px;
+    }
+    .informationbox{
+        margin-top: 200px;
+    }
+
+    .informationbox h1{
+        margin-bottom: 50px;
+    }
+
+    .information{
+        font-size:50px;
+    }
+
+    .information span{
+        margin-left: 115px;
+    color: white;
+    background: crimson;
+    border-radius: 15px;
+    font-size: 35px;
+    padding: 3px 10px;
+   }
+
+    .information dd{
+        font-size: 45px;
+    }
+    .profile{
+        margin-top:200px;
+    }
+    .contents{
+        margin-top:150px;
+        padding: 60px 20px 60px;
+    }
+
+    .contents span{
+        font-size: 70px;
+    }
+
+    footer{
+        margin-top: 200px;
+    }
+    #panda{
+        padding: 140px;
+    }
+    .profile p{
+        font-size:45px;
+    }
+    .profile img{
+        height: 200px;
+        width: 300px;
+    }
+
+    h1{
+        font-size: 70px;
+    }
+}
+
+
+

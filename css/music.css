@@ -1,0 +1,120 @@
+body {
+    background-image: url(../img/pandas.png);
+    background-size: contain;
+    margin-bottom: 50px;
+}
+
+p{
+    text-decoration: underline;
+    text-decoration-style:wavy;
+    text-decoration-color: red;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 45px;
+    font-family: sans-serif;
+    background: pink;
+    border-radius: 10px;
+    text-align: center;
+    width: 500px;
+    padding-top: 30px;
+    height: 100px;
+    margin: auto;
+    margin-top: 50px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.musiclist {
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    /* background: rgb(250,0,0,0.1); */
+    background: pink;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+h2 {
+    font-family: serif;
+    font-size: 40px;
+    color: black;
+    text-shadow: 2px 2px 2px white;
+}
+
+.scrollpanda {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    background-image: url(../img/scroll-panda2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 200px;
+}
+
+/* @media screen and  (min-width:1300px){
+ .musiclist{
+     width: 1000px;
+     margin-top: 100px;
+ }
+
+ .musiclist h2{
+     font-size: 70px;
+ }
+
+ body h1{
+     font-size: 70px;
+     width: 1000px;
+     padding-bottom: 30px;
+ }
+
+ .scrollpanda{
+    width: 300px;
+    height: 400px;
+ }
+
+} */
+
+@media screen and (max-width:1000px) {
+    .scrollpanda{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width:600px) {
+    body h1 {
+        width: 300px;
+        padding-top: 8px;
+        padding-bottom: 30px;
+        font-size: 40px;
+    }
+    .musiclist {
+        width: 300px;
+    }
+    .musiclist h2 {
+        font-size: 30px;
+    }
+    .audio {
+        width: 240px;
+    }
+
+    
+    @media screen and (max-width:350px) {
+        body h1 {
+            width: 220px;
+            padding-top: 17px;
+            font-size: 30px;
+        }
+
+        .musiclist{
+            width: 220px;
+        }
+
+        .audio{
+            width: 200px;
+        }
+
+    }
