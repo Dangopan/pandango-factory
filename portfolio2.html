@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pandango-portfolio</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link rel="stylesheet" href="css/reset.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
@@ -15,24 +16,27 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/pandango-portfolio.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
-    <link rel="stylesheet" href="main.js">
 </head>
 
 <body>
     <header>
-        <h1>portfolio</h1>
+        <div class="header">
+            <h1 class="title active">portfolio</h1>
+        </div>
     </header>
     <section>
         <div class="select">
 
             <h1>趣味</h1>
-            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="select" onChange="location.href=value;">
+            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="select"
+                onChange="location.href=value;">
                 <option value="#">選択してください</option>
                 <option value="cacao/readme.html">バレンタインは飛び跳ねる</option>
             </select>
 
             <h1>架空サイト</h1>
-            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" onChange="location.href=value;">
+            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                onChange="location.href=value;">
                 <!-- <option value="1">パン屋</option>
                 <option value="2">花屋</option>
                 <option value="3">医院</option>
