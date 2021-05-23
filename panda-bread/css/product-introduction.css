@@ -675,6 +675,9 @@ footer p {
         font-size: calc(10 / 300 * 100vw);
         display: block;
     }
+    .sp p{
+        line-height:15px !important;
+    }
     .strawberry-explanation h2 {
         margin-bottom: 0px;
     }
@@ -708,6 +711,9 @@ footer p {
     }
     .sp2-on {
         display: none;
+    }
+    .sp p{
+        line-height: 18px;
     }
     .strawberry-explanation {
         margin-left: calc(12 / 1200 * 100vw);
