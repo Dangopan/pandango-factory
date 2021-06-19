@@ -96,7 +96,9 @@ a:hover {
         transform: rotate(0deg);
     }
 }
-
+.information-sp{
+    display: none;
+}
 .informationbox {
     margin: 0 24px;
     width: calc(100% -3em);
@@ -427,5 +429,55 @@ footer {
     .profile span {
         top:30px;
         left: 11px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .information{
+        display: none;
+    }
+    .information-sp a {
+        text-decoration: none;
+        color: black;
+    }
+    .information-sp a:hover {
+        color: cornflowerblue;
+    }
+    .information-sp {
+        border: solid 1px gray;
+        margin: auto;
+        border-radius: 15px;
+        background: #FFFFE1;
+        padding: 15px;
+        font-size: large;
+        margin-bottom: 50px;
+        display: block;
+    }
+    .information-sp dl {
+        margin-bottom: 0em;
+    }
+    .information-sp dt {
+        font-weight: bold;
+        float: left;
+    }
+    .information-sp dd {
+        font-size: 20px;
+        text-align: start;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .information-sp span {
+        margin-left: 20px;
+        color: white;
+        background: crimson;
+        border-radius: 5px;
+        font-size: 12px;
+        padding: 0 2px;
+    }
+    .information-sp span {
+        font-family: Beon;
+        /* ネオン風のフォントを指定(ダウンロードしたもの) */
+        animation: flash 2s infinite;
+        /* アニメーションflashを2秒ごとに繰り返す */
     }
 }
