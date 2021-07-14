@@ -74,14 +74,16 @@ h1 {
     padding: 10px;
 }
 
-.contents a:hover {
-    background: #feffa494;
+.contents a:hover{
+    background-color:lightyellow;
 }
 
 .contents img {
     margin-bottom: 30px;
     width: 400px;
     margin: auto;
+    margin-top: 100px;
+    padding-bottom: 20px;
 }
 
 .cording {
@@ -90,7 +92,7 @@ h1 {
     color: #33aadb;
 }
 
-.cacao {
+.cacao,.Takara{
     margin-top: 100px;
     font-weight: bold;
     color: #33aadb;
@@ -115,13 +117,54 @@ h2 {
 }
 
 .gamename a:hover {
-    background: #ffffffab;
-    border: solid 3px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    background: #F4FBFE;
+}
+.gamename a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+.gamename a::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background:darkblue;
+    transform: scale(0, 1);
+    transform-origin: center top;
+    transition: transform .3s;
+ }
+.gamename a:hover::after {
+    transform: scale(1, 1);
+ }
+.demo{
+    -webkit-transform: translate(0, 0)  scale(0.5);
+    opacity: 0;
+}
+.demo.move{
+    -webkit-transition: all 1s;
+    -webkit-transform: scale(1.0);
+    opacity: 1;
+}
+.demo{
+    transition: .5s ease-in-out ;
 }
 
+.box{
+    transition: .5s ease-in-out ;
+}
+.scrollpanda {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-image: url("../img/scroll-panda.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 55px;
+    right: 0;
+}
 @media screen and (max-width:850px) {
     .menu a {
         font-size: 30px;
