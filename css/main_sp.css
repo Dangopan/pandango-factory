@@ -489,6 +489,7 @@ footer {
         transition: all 0.5s;
         /*アニメーション設定*/
         background-color:lightblue;
+        padding: 10px;
     }
     #menu-btn-check:checked~.menu-content {
         right: 0;
