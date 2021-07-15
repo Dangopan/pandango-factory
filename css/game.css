@@ -12,11 +12,15 @@ section {
     margin: 0 auto;
 }
 
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
 .menu {
     width: 100%;
     padding: 10px 10px 0;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin: 10px 0px;
 }
 
 .menu ul {
@@ -54,7 +58,7 @@ section {
     text-shadow: 1px 0px 10px #907922;
     font-weight: bold;
     background: linear-gradient(#a3f2ff, #fdf9d8c4);
-    max-width: 700px;
+    max-width: 800px;
     border-radius: 10px;
     margin-top: 30px;
     padding: 20px;
@@ -74,7 +78,7 @@ a:hover {
 
 .panda {
     animation: panda 1.1s linear 0s 1;
-    margin: auto;
+    margin:0px;
 }
 
 @keyframes panda {
@@ -218,8 +222,13 @@ h2 {
 @media screen and (max-width:700px){
     .sp-on{
         display: block;
+        display: flex;
     }
-    .menu{
+    .panda{
+        height: 160px !important;
+        margin: auto !important;
+    }
+    .menu,.flex{
         display: none;
     }
     #menu-btn-check:checked~.menu-btn span {
@@ -315,7 +324,7 @@ h2 {
         display: flex;
     }
     .preface {
-        max-width:460px;
+        max-width:460px !important;
     }
 }
 @media screen and (max-width:600px) {
@@ -348,8 +357,11 @@ h2 {
     .menu {
         padding: 0px;
     }
+    .panda2{
+        display: none;
+    }
     .preface {
-        max-width: 275px;
+        max-width: 275px !important;
         margin: auto;
         margin-bottom:50px;
     }
@@ -395,17 +407,51 @@ h2 {
         font-size: 30px !important;
     }
     .contents a {
-        font-size: 40px;
+        font-size: 30px;
     }
     .form-select-lg {
         font-size: 2rem;
     }
     .mb-3 {
         height: 80px;
-        width: 500px;
+        width: 500px !important;
         margin: auto;
     }
     .preface {
         font-size: 30px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .preface{
+        max-width:650px;
+    }
+    .flex{
+        max-width: 700px;
+        margin: auto;
+    }
+    .panda{
+        height: 100px;
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:750px){
+    .panda{
+        margin-left: 0px;
+    }
+    .flex{
+        max-width: 650px;
+    }
+    .panda{
+        height: 120px;
+        padding:15px;
+    }
+    .home{
+        font-size: 18px !important;
+    }
+    .menu a{
+        font-size: 25px;
     }
 }
