@@ -15,12 +15,18 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"><!--bootstrap-->
     <link rel="stylesheet" href="css/game.css"><!--css-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><!--jquery-->
+    <script src="game.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script><!--bootstrap ハンバーガーメニュー-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"><!--bootstrap ハンバーガーメニュー-->
 </head>
 
 <body>
-    <section class="wrap">
+    <section>
         <div class="section">
-            <div class="menu" id="btn">
+            <div class="menu wrap" id="btn">
                 <ul>
                     <li><a href="index.html" class="home">HOME</a></li>
                     <li><a href="picture.html">picture</a></li>
@@ -34,7 +40,37 @@
                     <!-- <li><a href="toiawase.html">contact</a></li> -->
                 </ul>
             </div>
-            <div class="contents">
+            <div class="hamburger-menu sp-on wrap">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <div class="menu-content">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="picture.html">picture</a>
+                        </li>
+                        <li>
+                            <a href="music.html">music</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCDtrJ3Cus6UiKL3O9CWYJWg" target="_blank"
+                            rel="noopener">youtube</a>
+                        </li>
+                        <li>
+                            <a rel="noopener" href="https://twitter.com/___danGOdanGO" target="_blank"
+                            class="aioseop-link">twitter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="preface wrap">
+                <p class="typ">趣味は創作<br>イラスト、作曲、執筆、空想など…<br>それら全てが詰まったゲーム制作はとても楽しいです！</p>
+                
+            </div>
+            <img src="img/pandango透明2.png" alt="" class="panda" width="150px" height="150px">
+            <div class="contents wrap">
                 <a href="https://www.freem.ne.jp/brand/11474" target="_blank" rel="noopener">ゲーム投稿サイトはこちら</a>
                 <div class="gamename">
                     <div class="cacao">
