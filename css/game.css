@@ -81,6 +81,10 @@ a:hover {
     margin:0px;
 }
 
+.panda3{
+    display: none;
+}
+
 @keyframes panda {
     0%   { transform: scale(0.8, 1.4) translate(0%, -100%); }
     10%  { transform: scale(0.8, 1.4) translate(0%, -15%); }
@@ -220,6 +224,11 @@ h2 {
     }
 }
 @media screen and (max-width:700px){
+    #menu-btn-check:checked~.menu-content {
+        position: relative;
+        right: 60px;
+        top: 50px;
+    }
     .sp-on{
         display: block;
         display: flex;
@@ -280,11 +289,6 @@ h2 {
         padding:20px;
         margin-bottom: 30px;
     }
-    #menu-btn-check:checked~.menu-content {
-        right: 0;
-        /*メニューを画面内へ*/
-        position: relative;
-    }
     .menu-content ul {
         padding: 5px 0px 0;
         margin-left: 30px;
@@ -337,9 +341,13 @@ h2 {
 }
 
 @media screen and (max-width:465px) {
+    .menu-content{
+        margin-bottom: 95px;
+    }
     .contents {
         padding: 0px;
         padding-bottom: 100px;
+        margin-top:30px;
     }
     .contents a {
         font-size: 16px;
@@ -359,6 +367,9 @@ h2 {
     }
     .panda2{
         display: none;
+    }
+    .panda3{
+        display: block;
     }
     .preface {
         max-width: 275px !important;
