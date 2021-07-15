@@ -9,6 +9,7 @@
     <title>pandango picture</title>
     <link rel="stylesheet" href="css/reset.min.css">
     <link rel="stylesheet" href="css/picture.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><!--jquery-->
 </head>
 
 <body>
@@ -21,29 +22,63 @@
             <!-- <a href="portfolio2.html" class="right">portfolio</a> -->
             <a href="music.html" class="right">music</a>
             <a href="https://www.youtube.com/channel/UCDtrJ3Cus6UiKL3O9CWYJWg" class="right" target="_blank"
-            rel="noopener">youtube</a>
+                rel="noopener">youtube</a>
             <a rel="noopener" href="https://twitter.com/___danGOdanGO" target="_blank" class="aioseop-link">twitter</a>
         </div>
-    </header> 
-    
-    
+    </header>
+
+
     <section class="wrap">
         <div class="picture">
-            <div class="otukimi">
-                <img src="img/otukimi.png" alt="picture" width="300px" id="hover">
-                <h1>お月見パンダ</h1>
+            <div class="flex">
+                <div class="otukimi">
+                    <img src="img/otukimi.png" alt="picture" width="300px" id="hover">
+                    <h1>お月見パンダ</h1>
+                </div>
+                <div class="fancy">
+                    <img src="img/pandangophoto2.png" alt="" width="300px" id="hover">
+                    <h1>パステルパンダ</h1>
+                </div>
+                <div class="gif">
+                    <img src="img/pandango anime.gif" alt="" width="300px">
+                    <h1>ドットパンダ</h1>
+                </div>
             </div>
-            <div class="fancy">
-                <img src="img/pandangophoto2.png" alt="" width="300px" id="hover">
-                <h1>パステルパンダ</h1>
-            </div>
-            <div class="gif">
-                <img src="img/pandango anime.gif" alt="" width="300px">
-                <h1>ドットパンダ</h1>
+            <div class="flex">
+                <div class="forest">
+                    <img src="img/黄昏パンダ.png" alt="" width="300px" id="forest">
+                    <h1>黄昏パンダ</h1>
+                </div>
             </div>
         </div>
-    </section>    
-   
+    </section>
+    <div class="scrollpanda" id="page-top"></div>
+    <script>
+        $(function () {
+            // TOPに戻るボタン
+            var topBtn = $('#page-top');
+            topBtn.hide();
+
+            //スクロールが100に達したらボタン表示
+            $(window).scroll(function () {
+                var w = $(window).width();
+                if ($(this).scrollTop() > 100) {
+                    topBtn.fadeIn();
+                } else {
+                    topBtn.fadeOut();
+                }
+            });
+
+            //スムーススクロールでページトップへ
+            topBtn.click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+        });
+    </script>
+
 </body>
 
 
