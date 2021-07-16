@@ -45,7 +45,7 @@ section {
     text-align: center;
 }
 
-.otukimi {
+.otukimi,.forest,.rain {
     margin-right: 100px;
     text-align: center;
 }
@@ -65,7 +65,7 @@ section {
     text-shadow: 2px 2px 2px #ddd;
 }
 
-#forest:hover{
+.hover2:hover{
     width: 350px;
 }
 
@@ -112,7 +112,7 @@ a:hover {
         padding-top: 35px;
         margin-bottom: 100px;
     }
-    .otukimi,.forest {
+    .otukimi,.forest,.rain {
         margin-right: auto;
     }
     .fancy {
