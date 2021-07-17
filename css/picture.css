@@ -45,7 +45,7 @@ section {
     text-align: center;
 }
 
-.otukimi,.forest,.rain {
+.otukimi,.forest,.rain,.sea {
     margin-right: 100px;
     text-align: center;
 }
@@ -112,7 +112,7 @@ a:hover {
         padding-top: 35px;
         margin-bottom: 100px;
     }
-    .otukimi,.forest,.rain {
+    .otukimi,.forest,.rain,.sea {
         margin-right: auto;
     }
     .fancy {
