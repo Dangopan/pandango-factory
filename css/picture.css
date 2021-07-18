@@ -44,7 +44,7 @@ section {
     text-align: center;
 }
 
-.otukimi,.forest,.rain,.sea,.winter,.summer,.dark-forest {
+.otukimi,.forest,.rain,.sea,.winter,.summer,.dark-forest,.zoo {
     margin-right: 100px;
     text-align: center;
 }
@@ -111,7 +111,7 @@ a:hover {
         padding-top: 35px;
         margin-bottom: 100px;
     }
-    .otukimi,.forest,.rain,.sea,.winter,.summer,.dark-forest {
+    .otukimi,.forest,.rain,.sea,.winter,.summer,.dark-forest,.zoo{
         margin-right: auto;
     }
     .fancy {
