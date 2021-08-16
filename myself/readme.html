@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>「myself」説明書</title>
+    <link rel="stylesheet" href="readme.css">
+    <script src="typ.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="typ"><span id="typewriter"></span></div>
+        <script>
+            const typewriter = (param) => {
+
+                let el = document.querySelector(param.el);
+                let speed = param.speed;
+                let string = param.string.split("");
+                string.forEach((char, index) => {
+                    setTimeout(() => {
+                        el.textContent += char;
+                    }, speed * index);
+                });
+            };
+            typewriter({
+                el: "#typewriter", //要素
+                string: "この度は、myself をダウンロードしてくださり、誠にありがとうございます！", //文字列
+                speed: 100 //速度
+            });
+        </script>
+    </header>   
+    
+    <section>
+        <h2>ゲーム概要</h2>
+        <div class="start2">
+            <p>タイトル　<span>myself</span></p>
+            <p>ジャンル　<span>ノベルゲーム</span></p>
+            <p>プレイ時間　<span>約5分程度</span></p>
+            <p>エンディング数　<span>1つ</span></p>
+            <p>制作ツール　<span>RPGツクールMV</span></p>
+            <p>制作期間　<span>1日</span></p>
+        </div>
+
+        <h2>起動方法</h2>
+        <p><span>Game.exe</span> をクリックしてください。</p>
+        <h2>操作方法</h2>
+        <p>Enter か クリック で読み進めるだけです。</p>
+        <h2>ゲームのアンインストール</h2>
+        <p>フォルダごと削除して下さい。</p>
+        <h2>プレイ動画、実況動画の動画サイトへの投稿について</h2>
+        <div class="start height">
+            <p>大歓迎です！むしろどんどん実況して下さい！喜びの舞です(o^―^o)<br>
+                その際は、<span>ゲーム名と制作者の明記</span>をお願い致します。<br>
+                報告は必須ではありませんが、連絡していただけると嬉しいです。<br>
+                <a rel="noopener" href="https://twitter.com/___danGOdanGO" target="_blank"
+                    class="aioseop-link twitter">→https://twitter.com/__danGOdanGO</a><br>
+                ただし、誹謗中傷目的での公開はご遠慮下さい。<br>
+                本作のプレイが原因で生じたトラブルや損害等について、制作者は一切責任を負わないものとします。
+                予めご了承ください。
+            </p>
+        </div>
+
+        <h2>その他</h2>
+        <div class="start">
+            <p>ご感想、バグなどの報告がございましたら、ふりーむ！でのコメントかTwitterからご連絡下さい。</p>
+            <p>プレイして下さる皆様にとって、少しでも楽しい時間となりますように♪</p>
+            <p>pandango🐼🍡</p>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

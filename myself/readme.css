@@ -1,0 +1,55 @@
+body{
+    text-align: center;
+}
+header{
+    padding: 20px;
+}
+h2{
+    background-color:#c1ff94;
+    padding: 10px;
+    border-radius: 10px;
+}
+.height{
+    line-height: 40px;
+}
+section span{
+    color: crimson;
+    font-weight: bold;
+}
+a:hover{
+    color:#03a9f4;
+}
+#typewriter::after {
+    content: "|";
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.typ{
+    margin: auto;
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+}
+@media screen and (max-width:500px) {
+    header span{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:300px){
+    header span{
+        font-size: 25px;
+    }
+    a{
+        font-size: 15px;
+    }
+   .start{
+       text-align: start;
+   }
+}
+@media screen and (min-width:700px){
+    p{
+        font-size: 25px;
+        padding: 15px;
+    }
+}
