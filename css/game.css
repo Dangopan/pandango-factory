@@ -7,34 +7,22 @@ section {
     padding-bottom: 200px;
 }
 
-.wrap {
-    max-width: 780px;
-    margin: 0 auto;
-}
-
 .flex{
     display: flex;
     justify-content: center;
 }
-
 .menu {
-    width: 100%;
-    padding: 10px 10px 0;
     margin: 10px 0px;
 }
 
 .menu ul {
     display: flex;
-    justify-content: space-around;
     width: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 .menu li {
     list-style: none;
     margin: 5px;
-    font-size: 40px;
     font-family:cursive;
 }
 
@@ -104,15 +92,11 @@ h1 {
     color: skyblue;
 }
 
-.home {
-    font-size: 32px;
-    font-weight: bold;
-}
-
 .contents {
     text-align: center;
     padding: 100px;
     border-radius: 30px;
+    padding-top: 0px;
 }
 
 .contents a {
@@ -129,25 +113,42 @@ h1 {
 }
 
 .contents img {
-    margin-bottom: 30px;
     width: 400px;
-    margin: auto;
-    margin-top: 100px;
     padding-bottom: 20px;
 }
 
 .cording {
-    margin-top: 100px;
     font-weight: bold;
     color: #33aadb;
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
 }
 
 .cacao,.Takara,.myself,.kamepan{
     margin-top: 100px;
     font-weight: bold;
     color: #33aadb;
+    display: flex;
 }
-
+.gamename h2 {
+    background: #dfefff;
+    box-shadow: 0px 0px 0px 5px #dfefff;
+    border: dashed 2px white;
+    padding: 0.2em 0.5em;
+}
+p{
+    font-size: 20px;
+    margin-left: 150px;
+    line-height: 40px;
+    color: black;
+    font-weight: 100;
+    text-align: start;
+    margin-top: 50px !important;
+    background: lightgoldenrodyellow;
+    padding: 30px;
+    border-radius: 10px;
+}
 .mb-3 {
     height: 55px;
 }
@@ -218,9 +219,6 @@ h2 {
 @media screen and (max-width:850px) {
     .menu a {
         font-size: 30px;
-    }
-    .home {
-        font-size: 23px !important;
     }
 }
 @media screen and (max-width:700px){
@@ -338,6 +336,15 @@ h2 {
     .menu li{
         font-family:serif;
     }
+    .cording{
+        width:auto;
+    }
+    p{
+        margin: 30px 0px !important;
+    }
+    .contents{
+        padding:45px;
+    }
 }
 
 @media screen and (max-width:465px) {
@@ -385,14 +392,14 @@ h2 {
     .panda{
         margin-bottom: 50px;
     }
-}
-
-@media screen  and (min-width:1200px){
-    h2{
-        margin-bottom: 30px !important;
+    p{
+      margin:30px 15px !important;  
     }
-    .form-select-lg {
-        font-size: 1.5rem !important;
+    .gamename h2{
+        margin: 0px 15px;
+    }
+    .contents img{
+        width: 300px;
     }
 }
 @media screen and (min-width:850px) {
@@ -400,22 +407,11 @@ h2 {
         padding: 15px;
         font-size: 30px;
     }
-    .home {
-        font-size:25px;
-    }
 }
 
 @media screen and (min-width:1500px) {
-    .wrap {
-        max-width: 1300px;
-    }
     .menu li {
         padding: 15px;
-        font-size: 35px !important;
-        margin-right: 80px;
-    }
-    .home{
-        font-size: 30px !important;
     }
     .contents a {
         font-size: 30px;
@@ -432,7 +428,17 @@ h2 {
         font-size: 30px;
     }
 }
-
+@media screen and (max-width:1200px){
+    .flex2{
+        display: block;
+    }
+    p{
+        margin: 30px;
+    }
+    .contents img{
+        margin: auto;
+    }
+}
 @media screen and (max-width:1000px){
     .preface{
         max-width:650px;
@@ -459,10 +465,16 @@ h2 {
         height: 120px;
         padding:15px;
     }
-    .home{
-        font-size: 18px !important;
-    }
     .menu a{
         font-size: 25px;
+    }
+}
+@media screen and (max-width:300px){
+    .contents img{
+        width: 270px;
+    }
+    p{
+        font-size: 15px;
+        line-height: 30px;
     }
 }
