@@ -1,6 +1,6 @@
 body {
-    background-image: url(../img/pandas.png);
-    background-size: contain;
+    /* background-image: url(../img/pandas.png);
+    background-size: contain; */
 }
 
 p {
@@ -10,27 +10,68 @@ p {
     font-weight: bold;
 }
 
+header{
+    display: flex;
+    background:linear-gradient(to right, #2af598 0%, #009efd 100%);
+    padding: 30px;
+}
+
+header img{
+    width:160px;
+    height:150px;
+}
+.music {
+    color: snow; 
+    font-size:25px; 
+    position: fixed;
+    top: -5%; 
+    text-shadow:
+    5vw   -100px 2px,
+    10vw  -400px 3px,
+    20vw  -500px 4px,
+    30vw  -580px 1px,
+    39vw  -250px 2px,
+    42vw  -340px 5px,
+    56vw  -150px 2px,
+    63vw  -180px 0,
+    78vw  -220px 4px,
+    86vw  -320px 9px,
+    94vw  -170px 7px;
+    animation: anim 7s linear infinite;
+}
+  
+ @keyframes anim {
+    100% {
+      color: transparent;
+      top: 150%;
+    }
+}
+header img {
+    animation: pikopiko 3s steps(2, start) infinite;
+  }
+  
+  @keyframes pikopiko {
+    0% {
+      transform: rotate(20deg);
+    }
+    to {
+      transform: rotate(-10deg);
+    }
+  }
+
 h1 {
     font-size: 45px;
-    font-family: sans-serif;
-    background: pink;
-    border-radius: 10px;
+    font-family:serif;
     text-align: center;
-    width: 500px;
-    padding-top: 30px;
-    height: 100px;
     margin: auto;
-    margin-top: 50px;
-    color: white;
-    text-shadow: 2px 2px 2px black;
+    font-weight:bold;
 }
 
 .musiclist {
     width: 500px;
     text-align: center;
     margin: auto;
-    /* background: rgb(250,0,0,0.1); */
-    background: pink;
+    background:linear-gradient(to right, #2af598 0%, #009efd 100%);
     border-radius: 10px;
     margin-top: 50px;
     padding-top: 30px;
@@ -41,7 +82,6 @@ h2 {
     font-family: serif;
     font-size: 40px;
     color: black;
-    text-shadow: 2px 2px 2px white;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -50,23 +90,17 @@ h2 {
     position: absolute;
     width: 170px;
     height: 170px;
-    background-image: url(../img/scroll-panda2.png);
+    background-image: url(../img/scroll-panda.png);
     background-size: contain;
     background-repeat: no-repeat;
     right: 200px;
 }
 
 footer {
-    background:#fff7fd;;
+    background:linear-gradient(to right, #2af598 0%, #009efd 100%);
     text-align: center;
     padding:30px;
     margin-top: 50px;
-    border: solid 4px;
-    border-left: none !important;
-    border-right: none !important;
-    border-bottom: none !important;
-    border-style: dashed;
-    border-color: pink;
 }
 
 .right {
@@ -85,18 +119,19 @@ a:hover {
 
 @media screen and (max-width:1200px) {
     .scrollpanda {
-        width: 130px;
-        height: 130px;
-        margin-top: 10px;
+        width: 115px;
+        height: 115px;
+        margin-top: 20px;
     }
 }
 
 @media screen and (max-width:600px) {
     body h1 {
-        width: 300px;
-        padding-top: 2px;
-        padding-bottom: 30px;
         font-size: 35px;
+    }
+    header img{
+        width: 100px;
+        height: 100px;
     }
     .musiclist {
         width: 300px;
@@ -108,13 +143,12 @@ a:hover {
         width: 240px;
     }
 }
-
-@media screen and (max-width:350px) {
+@media screen and (max-width:390px){
     body h1 {
-        width: 220px;
-        padding-top: 17px;
-        font-size: 30px;
+        font-size: 25px;
     }
+}
+@media screen and (max-width:350px) {
     .musiclist {
         width: 220px;
     }
@@ -134,12 +168,14 @@ a:hover {
     }
 }
 
+@media screen and (min-width:1000px){
+    .music{
+        font-size: 30px;
+    }
+}
 @media screen and (min-width:1500px) {
     a {
         font-size: 30px;
-    }
-    .right{
-        /* margin-right: 100px; */
     }
 }
 
