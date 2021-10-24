@@ -114,7 +114,7 @@ a {
 }
 
 a:hover {
-    color:deeppink;
+    color:white;
 }
 
 @media screen and (max-width:1200px) {
