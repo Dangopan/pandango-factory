@@ -394,6 +394,7 @@ h2 {
     }
     p{
       margin:30px 15px !important;  
+      font-size: 15px;
     }
     .gamename h2{
         margin: 0px 15px;
@@ -474,7 +475,6 @@ h2 {
         width: 270px;
     }
     p{
-        font-size: 15px;
         line-height: 30px;
     }
 }
