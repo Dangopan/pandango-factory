@@ -3,9 +3,9 @@ body {
     position: relative;
 }
 
-section {
+/* section {
     padding-bottom: 200px;
-}
+} */
 
 .flex{
     display: flex;
@@ -85,7 +85,7 @@ a:hover {
     100% { transform: scale(1.0, 1.0) translate(0%, 0%); }
 }
 
-h1 {
+.section h1 {
     font-size: 25px;
     text-align: center;
     font-family: serif;
@@ -137,7 +137,7 @@ h1 {
     border: dashed 2px white;
     padding: 0.2em 0.5em;
 }
-p{
+.section p{
     font-size: 20px;
     margin-left: 150px;
     line-height: 40px;
@@ -157,7 +157,7 @@ p{
     font-size: 1rem;
 }
 
-h2 {
+.section h2 {
     margin-bottom: 30px;
 }
 
@@ -210,7 +210,7 @@ h2 {
     position: absolute;
     width: 120px;
     height: 120px;
-    background-image: url("../img/scroll-panda.png");
+    background-image: url("../img/scroll-panda3.png");
     background-size: contain;
     background-repeat: no-repeat;
     bottom: 55px;
@@ -339,7 +339,7 @@ h2 {
     .cording{
         width:auto;
     }
-    p{
+    .section p{
         margin: 30px 0px !important;
     }
     .contents{
@@ -392,7 +392,7 @@ h2 {
     .panda{
         margin-bottom: 50px;
     }
-    p{
+    .section p{
       margin:30px 15px !important;  
       font-size: 15px;
     }
@@ -433,7 +433,7 @@ h2 {
     .flex2{
         display: block;
     }
-    p{
+    .section p{
         margin: 30px;
     }
     .contents img{
@@ -470,11 +470,29 @@ h2 {
         font-size: 25px;
     }
 }
+@media screen and (max-width:500px){
+    .scrollpanda{
+        width:100px;
+        height: 100px;
+        bottom: 0px;
+    }
+}
 @media screen and (max-width:300px){
     .contents img{
         width: 270px;
     }
-    p{
+    .section p{
         line-height: 30px;
+    }
+}
+@media screen and (min-width:700px){
+    .menu ul{
+        padding: 10px;
+     margin: 0px;
+    }
+}
+@media screen and (min-width:850px){
+    .menu a{
+        padding: 0px;
     }
 }

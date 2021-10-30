@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Yu Gothic", YuGothic, sans-serif;
+}
+.sindan,.choose_box{
+  background-color:skyblue;
+  height: 450px;
+}
+.sindan ul{
+  margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+img{
+    width: 300px;
+    margin: auto;
+    margin-top: 30px;
+  }
+  
+  .choose_box {
+    position: relative;
+    width: 100%;
+  }
+   .choose_box p {
+    margin-top: 5%;
+    margin-bottom: 10%;
+      font-size: 20px;
+      display: block;
+      font-weight: 600;
+      text-align: center;
+    }
+  
+  .choose_box li {
+    display: inline-block;
+    width: 80%;
+    margin-top: 30px;
+    list-style: none;
+  }
+  
+  ul {
+    margin-left: 10%;
+    padding-left: 0;
+  }
+  
+  
+  
+  .choose_box ul li a {
+    width: 70%;
+    margin: auto;
+    color: #fff;
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #2791d4;
+    font-weight: 600;
+    font-size: 16px;
+    border: 2px solid #2791d4;
+    text-decoration: none;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+  }
+  
+  .choose_box ul li a:hover {
+     background-color: #fff;
+    color: #2791d4;
+      -webkit-transition: 0.7s;
+      -moz-transition: 0.7s;
+      -o-transition: 0.7s;
+      transition: 0.7s;
+  }
+  
+  .app-theme p {
+    color:white;
+    background-color: skyblue;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+  
+  
+  .fit {
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    width: 100%;
+  }
+  
+  .fit p {
+    margin-top: 5%;
+    margin-bottom: 10%;
+      font-size: 18px;
+      display: block;
+      font-weight: 600;
+      text-align: center;
+      background: skyblue;
+      color: white;
+    text-decoration: underline;
+    }
+  
+  
+  
+  
+  .result_type0 h4,.result_type1 h4,.result_type2 h4,.result_type3 h4 {
+      width: 50%;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 600;
+      color: #fff;
+      text-align: center;
+    background-color:darkblue;
+    }
+  
+  .result_theme p  {
+      margin-top: 5%;
+      margin-bottom: 2%;
+      text-align: center;
+      background: skyblue;
+    color: white;
+  }
+  
+   .result_discription0,.result_discription1,.result_discription2,.result_discription3 {
+      text-align: center;
+      margin-bottom: 5%;
+  }
+  .result_discription0 h2,.result_discription1 h2,.result_discription2 h2,.result_discription3 h2 {
+      color: darkblue;
+      text-align: center;
+  }
+  
+  .result_discription0 p,.result_discription1 p,.result_discription2 p,.result_discription3 p {
+      font-family: "游ゴシック体", YuGothic;
+      margin-left: 15%;
+      margin-right: 15%;
+      padding: 20px;
+      text-align: left;
+      border: 1px solid darkblue;
+      color: #303030;
+      font-size: 16px;
+      line-height: 35px;
+      box-shadow: 0px 5px 1px darkblue;
+      border-radius: 5px;
+      background-color: white;
+      text-align: center;
+      width: 50%;
+      margin: auto;
+    }
+    
+  .return-btn {
+    margin-top: 5%;
+      margin-left: 35%;
+      margin-right: 35%;
+      width: 30%;
+      padding-bottom: 100px;
+  }
+  .return {
+    display: inline-block;
+    text-align: center;
+      text-decoration: none;
+      color: #fff;
+      background-color: #2791d4;
+      width: 100%;
+      padding: 10px 10px;
+      border: 1px solid #2791d4 ;
+  }
+  
+  .return:hover {
+      border: 1px solid #2791d4 ;
+      background-color: #fff;
+      color: #2791d4;
+      transition: 0.5s;
+  }
+  #answer_01,#answer_02,#answer_03,#answer_04{
+    background-color: skyblue;
+  }
+ @media screen and (max-width:900px) {
+  .choose_box ul li a {
+    width: 50%;
+    margin: auto;
+  }
+}
+  @media screen and (max-width:600px) {
+    .app-theme p{
+      line-height: 5px;
+    }
+    .result_discription0 p,.result_discription1 p,.result_discription2 p,.result_discription3 p{
+      width: 80%;
+      margin: 30px auto !important;
+     }
+     .choose_box ul li a {
+      width: 70%;
+    }
+  }
+  @media screen and (max-width:300px){
+    .app-theme p {
+      line-height: 30px;
+      padding: 10px;
+   }
+   .fit p{
+     padding: 15px;
+   }
+  }
+  @media screen and (min-width:600px){
+    .fit p{
+      margin-bottom: 0px;
+    }
+  }
+  @media screen and (min-width:1200px){
+    .fit p,.app-theme p,.result_theme p {
+      margin: auto;
+    }
+    img{
+      width: 500px;
+    }
+  }
