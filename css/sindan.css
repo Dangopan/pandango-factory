@@ -190,6 +190,9 @@ img{
       width: 80%;
       margin: 30px auto !important;
      }
+     .result_type0 h4,.result_type1 h4,.result_type2 h4,.result_type3 h4 {
+       width: 80%;
+     }
      .choose_box ul li a {
       width: 70%;
     }
