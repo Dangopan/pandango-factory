@@ -97,6 +97,7 @@ a:hover {
     padding: 100px;
     border-radius: 30px;
     padding-top: 0px;
+    padding-bottom: 10px;
 }
 
 .contents a {
@@ -353,7 +354,6 @@ a:hover {
     }
     .contents {
         padding: 0px;
-        padding-bottom: 100px;
         margin-top:30px;
     }
     .contents a {
