@@ -1,0 +1,417 @@
+
+
+header{
+    width: 100%;
+    height: 200px;
+    color:#17178c;
+    font-family: ui-monospace;
+    position: fixed;
+    background-image:url("../img/カカオ.png");
+    display: flex;
+    font-size: 21px;
+}
+
+header h1{
+    margin-left: 36px;
+}
+
+section{
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+}
+
+a:hover{
+    color:#7b609c;
+}
+
+.gif{
+    width: 143px;
+    height: 143px;
+    /* margin-left: 1060px; */
+    /* top: -250px; */
+    padding-top: 7px;
+    text-align: right;
+}
+
+.gif img{
+    max-width: none;
+}
+
+.Thanks{
+    position: relative;
+    /* top: -55px; */
+    margin-left: 167px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.Thanks span{
+    color:#ea3d3d;
+}
+
+body{
+    text-align: center;
+}
+
+section h1{
+    background:rgb(254 255 180 / 63%);
+    padding: 15px;
+}
+
+.flex{
+    display: flex;
+    width: 720px;
+    /* margin-left: 360px; */
+    margin:35px auto;
+    font-size: 30px;
+    font-family: monospace;
+}
+
+.list li{
+    background:#ffd985;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    width: 250px;
+    height: 50px;
+}
+
+.flex li{
+    margin-bottom: 20px;
+}
+
+.flex2 li{
+    margin-bottom: 20px;
+}
+
+.flex2{
+    display: flex;
+    /* margin-left: 280px; */
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-family: monospace;
+    font-size: 30px;
+    margin: 35px auto;
+    width:900px;
+}
+
+.screen li{
+    background:#ffd985;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    width: 250px;
+    height: 50px;
+}
+
+.control li{
+    list-style:none;
+    height:50px;
+}
+
+.control p{
+    margin: 30px;
+    font-size: 30px;
+    font-family: monospace;
+}
+
+.Uninstall p{
+    margin: 30px;
+    font-size: 25px;
+    font-family: monospace;
+}
+
+.post p{
+    margin: 30px;
+    font-size: 25px;
+    font-family:monospace;
+}
+
+.twitter{
+    color: dodgerblue;
+    text-decoration: underline;
+    margin: 30px;
+    font-size: 20px;
+    font-family:monospace;
+}
+
+.write{
+    text-decoration:underline red;/*下線を引く*/
+    text-decoration-style:wavy;/*下線を波線で表示*/
+}
+
+.overview li{
+    list-style: none;
+    height:50px;
+}
+
+.overview h1{
+    padding-top: 230px;
+}
+
+.starting p{
+    margin: 30px;
+    font-size: 30px;
+    font-family: monospace;
+}
+
+.starting span{
+    color:crimson;
+    font-family: monospace;
+}
+
+.other p{
+    margin: 30px;
+    font-size: 25px;
+    font-family: monospace;
+}
+
+.Iwish{
+    background:rgb(254 255 180 / 63%);
+    width: 100%;
+    height: 200px;
+}
+
+.Iwish p{
+    padding-top: 50px;
+    font-size: 20px;
+    font-family: monospace;
+    padding-bottom: 15px;
+    color: black;
+}
+
+.Iwish span{
+    font-family: monospace;
+    font-size: 20px;
+    color:black;
+}
+
+.sp_on{
+    display: none;
+}
+
+.hint ul,.information ul{
+    list-style: none;
+    line-height: 40px;
+    text-align: start;
+}
+
+@media screen and(max-width:1200px) {
+    .flex2{
+        margin: 35px auto;
+    }
+}
+
+@media screen and (max-width:1005px) {
+    .control li{
+        margin-bottom: 35px;
+    }
+    .button{
+        text-align: left;
+        font-size: 23px;
+    font-weight: bold;
+    margin-top: 17px;
+    }
+}
+
+@media screen and (max-width:979px) {
+    .Thanks h1{
+        font-size:29px;
+    }
+}
+
+@media screen and(max-width:888px) {
+    .flex2{
+        width: 665px;
+    }
+}
+
+@media screen and (max-width: 782px) {
+    .Thanks h1{
+        font-size: 25px;
+    }
+    .sp_none{
+        display: none;
+    }
+    .sp_on{
+        display: block;
+        margin-top: 40px;
+        font-weight: 600;
+    }
+.sp_on dt{
+    background:#ffd985;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    width: 255px;
+    height: 50px;
+    font-size: 20px;
+    font-family: cursive;
+    margin: auto;
+}
+
+.sp_on dd{
+    font-size: 20px;
+    padding: 15px;
+}
+}
+
+@media screen and (max-width: 721px) {
+    .Thanks h1{
+        font-size: 20px;
+    }
+
+}
+
+
+@media screen and (max-width:710px) {
+    .sp_none{
+        display: none;
+    }
+    .sp_on{
+        display: block;
+        margin-top: 40px;
+        font-weight: 600;
+    }
+.sp_on dt{
+    background:#ffd985;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    width: 255px;
+    height: 50px;
+    font-size: 20px;
+    font-family: cursive;
+    margin: auto;
+}
+
+.sp_on dd{
+    font-size: 20px;
+    padding: 15px;
+}
+    .flex{
+        width:500px;
+        align-content: center;
+        font-size: 20px;
+    }
+
+    .flex2{
+        font-size: 20px;
+    }
+    .overview li{
+        width: 225px;
+    }
+    .contents li{
+        width: 360px;
+    }
+    .contents{
+        text-align: left;
+    }
+
+    .button li{
+        width: 372px;
+    }
+    .list li{
+        margin-top: 60px !important;
+        margin-left: 185px !important;
+    }
+    .contents li{
+        position: relative !important;
+    }
+    .title{
+        top: -460px !important;
+        margin-right: 42px !important;
+    }
+    .zyanru{
+        top: -420px !important;
+        margin-right: 65px !important;
+    }
+    .play{
+        top: -380px !important;
+        margin-right: 60px !important;
+    }
+    .ending{
+        top: -340px !important;
+        margin-right: 60px !important;
+    }
+    .turu{
+        top: -290px !important;
+        margin-right: 60px !important;
+    }
+
+}
+@media screen and(max-width:615px) {
+    
+}
+
+@media screen and (max-width: 569px) {
+    .Thanks h1{
+         font-size: 20px;
+    }
+    .Thanks{
+        margin-left: 87px;
+    }
+    header{
+        background-image:url("../img/説明書カカオ\ 570px\ ×\ 200ox\ .png");
+    }
+    .gif{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:490px) {
+    .Thanks h1{
+        font-size: 15px;
+       margin: 0 auto;
+       margin-left: 27px;
+    }
+    body p{
+        font-size: 15px;
+    }
+    .Iwish{
+        height: 200px;
+    }
+}
+
+
+@media screen and (max-width: 416px) {
+    .Thanks{
+        margin-left: 77px;
+        height: 170px;
+    }
+    .Thanks h1{
+        font-size: 20px;
+        margin-left: 27px;
+        width:190px;
+    }
+    header{
+        background-image:url("../img/説明書カカオ\ 415px\ ×\ 200px.png");
+    }
+    .gif img{
+        width:90px;
+    }
+    .gif{
+        margin-top: 100px;
+    }
+    .twitter{
+        font-size: 17px;
+        overflow-wrap: break-word;
+        font-weight: bold;
+    }
+}   
+   
+@media screen and (max-width :378px) {
+       header{
+           background-image: url("../img/説明書カカオ\ 378px\ ×\ 200px.png");
+       }
+       
+       .Thanks{
+           margin: 0 auto;
+       }
+       .gif{
+           width: 90px;
+       }
+       .gif img{
+           width: 65px;
+       }
+    }
+
+
+
