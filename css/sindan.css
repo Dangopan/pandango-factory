@@ -102,7 +102,7 @@ img{
   
   
   
-  .result_type0 h4,.result_type1 h4,.result_type2 h4,.result_type3 h4,.result_type4 h4 {
+  .result_type0 h4,.result_type1 h4,.result_type2 h4,.result_type3 h4,.result_type4 h4,.result_type5 h4 {
       width: 50%;
       margin: auto;
       padding: 20px;
@@ -122,16 +122,16 @@ img{
     color: white;
   }
   
-   .result_discription0,.result_discription1,.result_discription2,.result_discription3,.result_discription4 {
+   .result_discription0,.result_discription1,.result_discription2,.result_discription3,.result_discription4,.result_discription5 {
       text-align: center;
       margin-bottom: 5%;
   }
-  .result_discription0 h2,.result_discription1 h2,.result_discription2 h2,.result_discription3 h2,.result_discription4 h2 {
+  .result_discription0 h2,.result_discription1 h2,.result_discription2 h2,.result_discription3 h2,.result_discription4 h2,.result_discription5 h2 {
       color: darkblue;
       text-align: center;
   }
   
-  .result_discription0 p,.result_discription1 p,.result_discription2 p,.result_discription3 p,.result_discription4 p {
+  .result_discription0 p,.result_discription1 p,.result_discription2 p,.result_discription3 p,.result_discription4 p,.result_discription5 p {
       font-family: "游ゴシック体", YuGothic;
       margin-left: 15%;
       margin-right: 15%;
@@ -173,7 +173,7 @@ img{
       color: #2791d4;
       transition: 0.5s;
   }
-  #answer_01,#answer_02,#answer_03,#answer_04,#answer_05{
+  #answer_01,#answer_02,#answer_03,#answer_04,#answer_05,#answer_06 {
     background-color: skyblue;
   }
  @media screen and (max-width:900px) {
@@ -186,11 +186,11 @@ img{
     .app-theme p{
       line-height: 5px;
     }
-    .result_discription0 p,.result_discription1 p,.result_discription2 p,.result_discription3 p,.result_discription4 p{
+    .result_discription0 p,.result_discription1 p,.result_discription2 p,.result_discription3 p,.result_discription4 p,.result_discription5 p{
       width: 80%;
       margin: 30px auto !important;
      }
-     .result_type0 h4,.result_type1 h4,.result_type2 h4,.result_type3 h4,.result_type4 h4 {
+     .result_type0 h4,.result_type1 h4,.result_type2 h4,.result_type3 h4,.result_type4 h4,.result_type5 h4 {
        width: 80%;
      }
      .choose_box ul li a {

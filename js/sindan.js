@@ -15,7 +15,8 @@ $(function () {
     // var countSELF = 0; [2]
     // var countHARO = 0; [3]
     // var countBIKE = 0; [4]
-    var count = [0,0,0,0,0]
+    // var countTANSHIN = 0;[5]
+    var count = [0,0,0,0,0,0]
 
     var box = [];
     $(".btn").each(function () {
@@ -33,15 +34,19 @@ $(function () {
             };
             if ($(this).data("value") == "adventure"){
                 // countHARO += 1;
+                // ciuntTANSHIN += 1;
                 count[3] += 1;
+                count[5] += 1;
             };
             if ($(this).data("value") == "smooth"){
                 // countKAME += 1;
                 // countKAKAO += 1;
                 // countSELF += 1;
+                // countTANSHIN += 1;
                 count[0] += 1;
                 count[1] += 1;
                 count[2] += 1;
+                count[5] += 1;
             };
             if ($(this).data("value") == "slow"){
                 // countHARO += 1;
@@ -58,6 +63,8 @@ $(function () {
                 // countSELF += 1;
                 // countHARO += 1;
                 // countBIKE += 1;
+                // countTANSHIN += 1;
+                count[5] += 1;
                 count[4] += 1;
                 count[3] += 1;
                 count[1] += 1;
@@ -73,6 +80,8 @@ $(function () {
                 // countKAKAO += 1;
                 // countHARO += 1;
                 // countBIKE += 1;
+                // countTANSHIN += 1;
+                count[5] += 1;
                 count[4] += 1;
                 count[3] += 1;
                 count[1] += 1;
@@ -86,6 +95,8 @@ $(function () {
                 // countSELF += 1;
                 // countHARO += 1;
                 // countBIKE += 1;
+                // countTANSHIN += 1;
+                count[5] += 1;
                 count[4] += 1;
                 count[3] += 1;
                 count[1] += 1;
@@ -96,6 +107,7 @@ $(function () {
             // console.log(countSELF);
             // console.log(countHARO);
             // console.log(countBIKE);
+            // console.log(countTANSHIN);
         });
     });
 
@@ -108,7 +120,7 @@ $(function () {
 
             $(function () {
 
-            // maxindex = 5
+            // maxindex = 6
             var maxindex = count.indexOf(Math.max.apply(null,count));
             
             console.log(maxindex);
@@ -122,6 +134,8 @@ $(function () {
                 $('#answer_04').css("display", ""); //回答4
             } else if (maxindex == 4){
                 $('#answer_05').css("display", ""); //回答5
+            } else if (maxindex == 5){
+                $('#answer_06').css("display", ""); //回答6
             }
             });
 

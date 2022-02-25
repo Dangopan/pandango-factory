@@ -1,0 +1,265 @@
+.background,footer,dt,.accordion-item:last-of-type .accordion-button.collapsed, .accordion-button:focus{
+    background-image: linear-gradient(-90deg, rgb(244 139 54 / 7%) 50%, #ffffff00 50%), linear-gradient(rgb(150 197 248 / 12%) 50%, transparent 50%);
+    background-size: 20px 20px;
+}
+.background{
+    padding-bottom: 5px;
+}
+header{
+    background-image: url(../img/flaggarland.png);
+    background-repeat: repeat;
+    height: 120px;
+}
+hr{
+    margin: 0px !important;
+}
+section p{
+    width: 50%;
+    margin: auto;
+}
+.start p{
+    text-align: start;
+}
+.first span{
+    color: red;
+    text-shadow: none;
+    font-size: 30px;
+}
+.first{
+    display: flex;
+    justify-content: center;
+}
+.first p{
+    text-align: start;
+    padding: 100px;
+    font-size: 20px;
+    font-family:sans-serif;
+    font-weight: bold;
+    margin-right: 100px;
+    color          : #ffffff;           
+    letter-spacing : 4px;            
+    text-shadow    :  2px  2px 1px #003366, -2px  2px 1px #003366,2px -2px 1px #003366,-2px -2px 1px #003366,
+                      2px  0px 1px #003366,0px  2px 1px #003366,-2px  0px 1px #003366,0px -2px 1px #003366;
+}
+.first img{
+    padding-top:200px;
+}
+.click{
+    font-size: 12px !important;
+    text-shadow: none !important;
+    color: black !important;
+}
+body{
+    font-family: monospace;
+}
+section h1{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+section p,.game dl,.button dl{
+    font-size: 25px;
+    text-align: center;
+}
+dl,dt,dd {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dl_table {
+    background-color: #FFF;
+    border-top: 1px solid #E4E4E4;
+    border-left: 1px solid #E4E4E4;
+    margin: 20px;
+    width:70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  .dl_table dt {
+    background-color: #FBFBFB;
+    font-weight: bold;
+  }
+  .dl_table dt,
+  .dl_table dd {
+    padding: 15px;
+    width: 50%;
+    box-sizing: border-box;
+    border-right:  1px solid #E4E4E4;
+    border-bottom: 1px solid #E4E4E4;
+  }
+dd{
+    margin-bottom: 0px !important;
+}
+.dango{
+    display: flex;
+    justify-content: center;
+}
+.dango img{
+    width: 3%;
+    margin: 10px;
+}
+.movie a,.caution ul,.accordion-body,.preface p{
+    font-size: 25px !important;
+}
+.caution ul{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.background ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0px;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bold;
+}
+.background li{
+    margin:0px 20px;
+}
+.background a{
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    display        : inline-block;
+    color          : #ffffff;           
+    letter-spacing : 4px;            
+    text-shadow    :  2px  2px 1px #003366, -2px  2px 1px #003366,2px -2px 1px #003366,-2px -2px 1px #003366,
+                      2px  0px 1px #003366,0px  2px 1px #003366,-2px  0px 1px #003366,0px -2px 1px #003366;        
+}
+.background a::after {
+    position: absolute;
+    bottom:0px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height:10px;
+    background: rgba(255, 247, 137, 0.7);
+    transform: scale(0, 1);
+    transform-origin: center top;
+    transition: transform .3s;
+}
+.background a:hover::after {
+    transform: scale(1, 1);
+}
+.background a:hover{
+    color: white;
+}
+.box span,.starting span,.movie span{
+    color: red;
+}
+.box{
+    display: flex;
+    margin: auto;
+    margin-top: 100px;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+.scroll{
+    padding: 50px 0px;
+}
+footer{
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 0px;
+}
+#copy{
+    margin-bottom: 0px;
+    font-size: 15px;
+    color: #8b7e7e;
+}
+.accordion-item:last-of-type .accordion-button.collapsed,.accordion-button:not(.collapsed),.accordion-body,.accordion-item:last-of-type .accordion-collapse {
+    width: 60%;
+}
+.accordion-button:not(.collapsed),.accordion-item:last-of-type .accordion-button.collapsed{
+    font-size: 20px;
+}
+.accordion-body,.accordion-item:last-of-type .accordion-collapse{
+    margin: auto;
+}
+.accordion-item:last-of-type .accordion-button.collapsed,.accordion-button:focus{
+    font-weight: 400 !important;
+    color: black !important;
+}
+.accordion-body{
+    padding: 0px !important;
+}
+.accordion-body ul{
+    list-style: none;
+    padding: 0px;
+}
+.scrollpanda {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-image: url("../img/scroll-panda2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 0;
+}
+
+@media screen and (min-width:1080px){
+    .first img{
+        padding-top: 250px;
+    }
+}
+@media screen and (min-width:700px){
+    .first p{
+        text-align: center;
+    }
+}
+@media screen and (max-width:1080px) {
+    .first{
+        display:block;
+    }
+    .first img{
+        padding: 0px;
+        margin: auto;
+        width: 30%;
+    }
+    .first p{
+        padding: 50px;
+        margin-right: 0px;
+    }
+    .dango img{
+        display: none;
+    }
+    section h1{
+        font-size: 25px;
+    }
+    section p,.game dl,.button dl,.movie a, .caution ul, 
+    .accordion-body, .preface p,accordion-button:not(.collapsed),.accordion-item:last-of-type 
+    .accordion-button.collapsed,.accordion-button:focus,.accordion-button:not(.collapsed) {
+        font-size: 15px !important;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width:600px){
+    .scrollpanda{
+        width: 100px;
+        height: 100px;
+        opacity: 0.6;
+    }
+}
+@media screen and (max-width:400px){
+    .first p{
+        padding: 18px;
+        font-size: 15px;
+    }
+    .first span{
+        font-size: 20px;
+    }
+    section p{
+        width: 90%;
+    }
+    .box{
+        margin-top: 20px;
+    }
+    .accordion-button:not(.collapsed), .accordion-item:last-of-type .accordion-button.collapsed,
+    .accordion-item:last-of-type .accordion-button.collapsed, .accordion-button:not(.collapsed), 
+    .accordion-body, .accordion-item:last-of-type .accordion-collapse {
+        width: 90%;
+    }
+}
