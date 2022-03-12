@@ -116,7 +116,9 @@ a {
 a:hover {
     color:#607d8b;
 }
-
+video {
+    margin-top: 30px;
+}
 @media screen and (max-width:1200px) {
     .scrollpanda {
         width: 115px;
