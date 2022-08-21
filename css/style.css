@@ -1,0 +1,833 @@
+/*---共通設定---*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(201, 237, 252, 0.2) !important;
+    position: relative;
+}
+
+.wrap {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.sp-on {
+    display: none;
+}
+
+/*nav*/
+.menu {
+    width: 100%;
+    padding: 10px 10px 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    list-style: none;
+    margin: 5px;
+    font-size: 40px;
+    font-family: cursive;
+}
+
+.menu a {
+    text-decoration: none;
+    color: skyblue;
+    text-shadow: 4px 1px 5px lightyellow;
+}
+
+a:hover {
+    color: rgb(11, 56, 153);
+}
+
+/*nav終わり*/
+
+/*main画像*/
+.main {
+    padding-top: 53%;
+    background-image: url("../img/main_img.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/*pandangoの画像*/
+#panda {
+    transform-origin: center bottom;
+    animation: yurayura 3s linear infinite;
+    width: 20%;
+    position: relative;
+    bottom: 200px;
+    left: 20px;
+}
+
+@keyframes yurayura {
+
+    0%,
+    100% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+}
+.h1 h1{
+    background: #dfefff;
+    box-shadow: 0px 0px 0px 5px #dfefff;
+    border: dashed 2px white;
+    padding: 0.2em 0.5em;
+    margin: 0 auto 100px !important;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+}
+.bannar {
+    margin-top: 100px;
+}
+
+.bannar img {
+    margin: 30px auto;
+}
+
+.bannar img:hover {
+    opacity: 0.6;
+}
+
+.scroll {
+    height: 50px;
+}
+
+.scrollpanda {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-image: url("../img/scroll-panda.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 55px;
+    right: 0;
+}
+
+footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background: skyblue;
+    opacity: 0.6;
+}
+
+.footer {
+    font-weight: bold;
+    padding-top: 10px;
+    color: darkslategray;
+    font-family: system-ui;
+}
+
+.pro-pd,
+.picture .pd,
+.game .pd {
+    padding: 20px;
+}
+
+/*---共通設定終わり---*/
+
+/*---index.html---*/
+.index h1 {
+    font-size: 25px;
+    text-align: center;
+    font-family: serif;
+    color: skyblue;
+}
+
+.informationbox {
+    margin: 0 24px;
+    width: calc(100% -3em);
+    margin-top: 50px;
+}
+
+.information {
+    padding: 15px;
+}
+
+.information,
+.contents {
+    border: solid 1px gray;
+    margin: auto;
+    border-radius: 15px;
+    background: #FFFFE1;
+    font-size: large;
+    margin-bottom: 50px;
+}
+
+.information dl {
+    margin-bottom: 0em;
+}
+
+.information dt {
+    font-weight: bold;
+    float: left;
+}
+
+.information dd {
+    font-size: 20px;
+    text-align: center;
+}
+
+.information a {
+    text-decoration: none;
+    color: black;
+}
+
+.information a:hover {
+    color: cornflowerblue;
+}
+
+.information span {
+    margin-left: 20px;
+    color: white;
+    background: crimson;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 0 2px;
+    font-family: Beon;
+    animation: flash 2s infinite;
+}
+
+@keyframes flash {
+
+    0%,
+    100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgb(255, 255, 255), 0 0 70px rgb(255, 255, 255), 0 0 80px rgb(255, 255, 255), 0 0 100px rgb(255, 255, 255), 0 0 150px rgb(255, 255, 255);
+    }
+
+    50% {
+        text-shadow: 0 0 10px rgb(255, 85, 85), 0 0 20px rgb(255, 85, 85), 0 0 30px #fcfcfc, 0 0 40px #fcfcfc;
+    }
+}
+
+.information-sp {
+    display: none;
+}
+
+.profile {
+    margin: 0 24px;
+}
+
+.background {
+    background-image: url(../img/picture/winter.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+    border-bottom: solid 1px;
+}
+
+.contents img {
+    height: 100px;
+    margin: auto;
+    width: 160px;
+}
+
+.span {
+    border-bottom: 2px dashed;
+    width: 20%;
+    text-align: center;
+    margin: 0 0 20px !important;
+}
+
+.profile p {
+    font-family: cursive;
+    margin: auto;
+    font-size: 16px;
+}
+
+/*---index.html終わり---*/
+/*--game.html---*/
+.game .flex img {
+    margin-bottom: 100px;
+}
+
+.game img {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
+.gamename a {
+    font-size: 30px;
+    color: darkblue;
+    text-decoration: none;
+    border: none;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.gamename a:hover {
+    background: #F4FBFE;
+}
+
+.gamename a::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: darkblue;
+    transform: scale(0, 1);
+    transform-origin: center top;
+    transition: transform .3s;
+}
+
+.gamename a:hover::after {
+    transform: scale(1, 1);
+}
+
+.game p {
+    line-height: 2;
+    background: lightgoldenrodyellow;
+    padding: 30px;
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: start;
+}
+
+.game .pd {
+    text-align: center;
+}
+
+.demo {
+    -webkit-transform: translate(0, 0) scale(0.5);
+    opacity: 0;
+}
+
+.demo.move {
+    -webkit-transition: all 1s;
+    -webkit-transform: scale(1.0);
+    opacity: 1;
+}
+
+.demo {
+    transition: .5s ease-in-out;
+}
+
+.box {
+    transition: .5s ease-in-out;
+}
+
+.game h2 {
+    text-align: center;
+}
+
+.form-select {
+    width: 50% !important;
+    margin: auto;
+}
+/*---picture.html---*/
+.picture .flex {
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.picture h1 {
+    text-align: center;
+    padding: 20px;
+    font-family: monospace;
+    color: darkblue;
+}
+
+#picture img {
+    width: 300px;
+    height: 350px;
+    object-fit: contain;
+}
+
+#picture img:hover {
+    opacity: 0.6;
+}
+
+/*---picture.html終わり---*/
+/*---music.html*/
+#music {
+    color: black;
+    font-size: 25px;
+    position: fixed;
+    top: -5%;
+    text-shadow:
+        5vw -100px 2px,
+        10vw -400px 3px,
+        20vw -500px 4px,
+        30vw -580px 1px,
+        39vw -250px 2px,
+        42vw -340px 5px,
+        56vw -150px 2px,
+        63vw -180px 0,
+        78vw -220px 4px,
+        86vw -320px 9px,
+        94vw -170px 7px;
+    animation: anim 7s linear infinite;
+}
+
+@keyframes anim {
+    100% {
+        top: 150%;
+    }
+}
+
+.music {
+    text-align: center;
+}
+
+.music p {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+    font-weight: bold;
+}
+
+.music .pd {
+    padding: 20px;
+}
+
+video {
+    width: 50%;
+}
+
+/*---music.html終わり---*/
+
+
+/*---responsive---*/
+@media screen and (min-width:2000px) {
+
+    /*---共通設定---*/
+    .wrap {
+        max-width: 1900px;
+    }
+
+    .menu a {
+        font-size: 70px;
+    }
+
+    footer {
+        margin-top: 200px;
+    }
+
+    /*---共通設定終わり---*/
+    /*---index.html---*/
+    .index h1 {
+        font-size: 70px;
+    }
+
+    .index h1 {
+        margin-bottom: 50px;
+    }
+
+    .information {
+        font-size: 50px;
+    }
+
+    .information span {
+        margin-left: 115px;
+        color: white;
+        background: crimson;
+        border-radius: 15px;
+        font-size: 35px;
+        padding: 3px 10px;
+    }
+
+    .information dd {
+        font-size: 45px;
+    }
+
+    .profile {
+        margin-top: 200px;
+    }
+
+    .profile img {
+        height: 200px;
+        width: 300px;
+    }
+
+    .profile p {
+        font-size: 45px;
+    }
+
+    /*---index.html終わり---*/
+}
+
+@media screen and (min-width:1300px) {
+
+    /*---共通設定---*/
+    .wrap {
+        max-width: 1200px;
+    }
+
+    .menu a {
+        font-size: 40px;
+    }
+
+    #panda {
+        bottom: 270px;
+    }
+
+    footer {
+        margin-top: 150px;
+    }
+
+    /*---共通設定終わり---*/
+    /*---index.html---*/
+    .information {
+        font-size: 25px;
+    }
+
+    .information span {
+        font-size: 20px;
+        padding: 1px 4px;
+    }
+
+    .information dd {
+        font-size: 25px;
+    }
+
+    .profile {
+        margin-top: 100px;
+    }
+
+    .profile p {
+        font-size: 25px;
+    }
+
+    .profile img {
+        height: 150px;
+        width: 200px;
+    }
+
+    /*---index.html終わり---*/
+}
+
+@media screen and (min-width:700px) {
+
+    /*---共通設定---*/
+    .menu li {
+        font-size: 30px;
+    }
+
+    .index h1 {
+        font-size: 40px;
+    }
+
+    /*---共通設定終わり---*/
+    /*index.html*/
+    .contents {
+        display: flex;
+    }
+
+    .contents img {
+        height: auto;
+        width: 100%;
+    }
+
+    .background {
+        border-radius: 15px 0 0 15px;
+        border-bottom: none;
+        border-right: 1px solid;
+    }
+
+    .bannar {
+        display: flex;
+        justify-content: center;
+    }
+
+    .bannar img {
+        padding: 20px;
+    }
+
+    /*---index.html終わり---*/
+}
+
+@media screen and (max-width:1300px) {
+
+    /*game.html*/
+    .game .flex {
+        display: block;
+    }
+
+    .game img {
+        margin: auto;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    /*---共通設定---*/
+    .main {
+        top: 50px;
+    }
+
+    #panda {
+        bottom: 120px;
+    }
+
+    .sp-on {
+        display: block;
+    }
+
+    /*ハンバーガーメニュー*/
+    .menu {
+        display: none;
+    }
+
+    .menu li {
+        font-size: 25px;
+    }
+
+    #menu-btn-check:checked~.menu-btn span {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    #menu-btn-check:checked~.menu-btn span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+
+    #menu-btn-check:checked~.menu-btn span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    .menu-btn {
+        display: flex;
+        height: 60px;
+        width: 60px;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        position: fixed;
+    }
+
+    .menu-btn span,
+    .menu-btn span:before,
+    .menu-btn span:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 25px;
+        border-radius: 3px;
+        background-color: lightblue;
+        position: absolute;
+    }
+
+    .menu-btn span:before {
+        bottom: 8px;
+    }
+
+    .menu-btn span:after {
+        top: 8px;
+    }
+
+    #menu-btn-check {
+        display: none;
+    }
+
+    .menu-content {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        right: 100%;
+        transition: all 0.5s;
+        background-color: aliceblue;
+        padding: 10px;
+        position: fixed;
+        z-index: 99;
+    }
+
+    #menu-btn-check:checked~.menu-content {
+        right: 0;
+        position: fixed;
+        z-index: 99;
+    }
+
+    .menu-content ul {
+        padding: 50px 0px 0;
+        margin-left: 10px;
+        list-style: none;
+    }
+
+    .menu-content ul li {
+        border-bottom: solid 1px #ffffff;
+    }
+
+    .menu-content ul li a {
+        display: block;
+        width: 100%;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: cursive;
+        box-sizing: border-box;
+        color: skyblue;
+        text-decoration: none;
+        padding: 15px 15px 10px 0;
+        position: relative;
+    }
+
+    .menu-content ul li a::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-top: solid 2px #ffffff;
+        border-right: solid 2px #ffffff;
+        transform: rotate(45deg);
+        position: absolute;
+        right: 11px;
+        top: 16px;
+    }
+
+    .menu-content ul li a:hover {
+        color: darkblue;
+    }
+
+    /*ハンバーガーメニュー終わり*/
+    .h1 {
+        width: 90%;
+        margin: auto;
+    }
+
+    /*---共通設定終わり---*/
+    /*---index.html*/
+    .information {
+        display: none;
+    }
+
+    .information-sp {
+        border: solid 1px gray;
+        margin: auto;
+        border-radius: 15px;
+        background: #FFFFE1;
+        padding: 15px;
+        font-size: large;
+        margin-bottom: 50px;
+        display: block;
+    }
+
+    .information-sp a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .information-sp a:hover {
+        color: cornflowerblue;
+    }
+
+    .information-sp dl {
+        margin-bottom: 0em;
+    }
+
+    .information-sp dt {
+        font-weight: bold;
+        float: left;
+    }
+
+    .information-sp dd {
+        font-size: 20px;
+        text-align: start;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .information-sp span {
+        margin-left: 20px;
+        color: white;
+        background: crimson;
+        border-radius: 5px;
+        font-size: 12px;
+        padding: 0 2px;
+        font-family: Beon;
+        animation: flash 2s infinite;
+    }
+
+    /*---index.html終わり---*/
+    /*---picture.html---*/
+    .picture .flex {
+        display: block;
+    }
+
+    .picture img {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    /*---共通設定---*/
+    #panda {
+        bottom: 70px;
+    }
+
+    .h1 {
+        margin: 30px auto !important;
+    }
+
+    .h1 h1 {
+        font-size: 30px;
+    }
+
+    /*---共通設定終わり---*/
+    /*---index.html---*/
+    .span{
+        width: 50%;
+    }
+    /*---game.html*/
+    .game img {
+        width: 90%;
+    }
+
+    .game .flex img {
+        margin-bottom: 0;
+    }
+
+    .gamename a {
+        font-size: 25px;
+    }
+
+    .game p {
+        padding: 25px;
+        font-size: 18px;
+    }
+
+    .form-select {
+        width: 80% !important;
+    }
+
+    /*---music.html---*/
+    .music p {
+        font-size: 14px;
+    }
+
+    audio {
+        width: 250px;
+    }
+
+    video {
+        width: 90%;
+    }
+
+    /*---music.html終わり---*/
+}

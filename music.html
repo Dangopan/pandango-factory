@@ -2,150 +2,188 @@
 <html lang="ja">
 
 <head>
-    <link rel="icon" href="img/favicon2.ico">
+    <link rel="icon" href="img/favicon.ico">
+    <!--favicon-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pandango music</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <title>music | pandangofactory</title>
     <link rel="stylesheet" href="css/reset.min.css">
-    <link rel="stylesheet" href="css/music.css">
+    <!--reset.css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--css-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+    <!--bootstrap ハンバーガーメニュー-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!--bootstrap ハンバーガーメニュー-->
 </head>
 
-<body>
-    <header>
-        <h1>pandango music</h1>
-        <img src="img/pandango透明2.png" alt="">
-    </header>
-    <div class="music">♪</div>
-    <div class="musiclist">
-<p>無断転載、加工、複製、商用利用は禁止です。</p>
-        <div class="gleam of hope">
-            <h2>gleam of hope</h2>
-            <audio controls class="audio">
-                <source src="audio/gleam of hope.wav">
-            </audio>
+<body id="top">
+    <div class="wrap">
+        <div class="menu" id="btn">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="game.html">GAME</a></li>
+                <li><a href="picture.html">PICTURE</a></li>
+                <li><a href="https://www.youtube.com/channel/UCDtrJ3Cus6UiKL3O9CWYJWg" target="_blank"
+                        rel="noopener">YOUTUBE</a></li>
+                <li><a rel="noopener" href="https://twitter.com/___danGOdanGO" target="_blank"
+                        class="aioseop-link">TWITTER</a></li>
+            </ul>
         </div>
-
-        <div class="last flight">
-            <h2>last flight</h2>
-            <audio controls class="audio">
-                <source src="audio/last flight.wav">
-            </audio>
+        <div class="hamburger-menu sp-on">
+            <input type="checkbox" id="menu-btn-check">
+            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+            <div class="menu-content">
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="game.html">GAME</a>
+                    </li>
+                    <li>
+                        <a href="picture.html">PICTURE</a>
+                    </li>
+                    <li>
+                        <a href="music.html">MUSIC</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCDtrJ3Cus6UiKL3O9CWYJWg" target="_blank"
+                            rel="noopener">YOUTUBE</a>
+                    </li>
+                    <li>
+                        <a rel="noopener" href="https://twitter.com/___danGOdanGO" target="_blank"
+                            class="aioseop-link">TWITTER</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        <div class="silent prayer">
-            <h2>silent prayer</h2>
-            <audio controls class="audio">
-                <source src="audio/silent prayer.wav">
-            </audio>
+        <div class="main">
+            <img src="img/pandango.png" alt="ぱんだんご" id="panda">
         </div>
+        <div class="h1"><h1>MUSIC</h1></div>
+        <div id="music">♪</div>
+        <div class="music">
+            <div class="musiclist">
+                <p>無断転載、加工、複製、商用利用は禁止です。</p>
+                <div class="pd">
+                    <h2>gleam of hope</h2>
+                    <audio controls class="audio">
+                        <source src="audio/gleam of hope.wav">
+                    </audio>
+                </div>
 
-        <div class="pink">
-            <h2>pink</h2>
-            <audio controls class="audio">
-                <source src="audio/pink.wav">
-            </audio>
+                <div class="pd">
+                    <h2>last flight</h2>
+                    <audio controls class="audio">
+                        <source src="audio/last flight.wav">
+                    </audio>
+                </div>
+
+                <div class="pd">
+                    <h2>silent prayer</h2>
+                    <audio controls class="audio">
+                        <source src="audio/silent prayer.wav">
+                    </audio>
+                </div>
+
+                <div class="pd">
+                    <h2>pink</h2>
+                    <audio controls class="audio">
+                        <source src="audio/pink.wav">
+                    </audio>
+                </div>
+
+                <div class="pd">
+                    <h2>after the sun</h2>
+                    <audio controls class="audio">
+                        <source src="audio/after the sun2.wav">
+                    </audio>
+                </div>
+
+                <div class="pd">
+                    <h2>The dancing fairies</h2>
+                    <audio controls class="audio">
+                        <source src="audio/The dancing fairies.wav">
+                    </audio>
+                </div>
+
+                <div class="pd">
+                    <h2>Rituals of sadness</h2>
+                    <audio controls class="audio">
+                        <source src="audio/Rituals of sadness.wav">
+                        <audio controls>
+                </div>
+
+                <div class="pd">
+                    <h2>五龍祭</h2>
+                    <audio controls class="audio">
+                        <source src="audio/五龍祭.wav">
+                    </audio>
+                </div>
+
+                <div class="pd">
+                    <h2>recollection</h2>
+                    <audio controls class="audio">
+                        <source src="audio/recollection.wav">
+                    </audio>
+                </div>
+
+                <div class="pd">
+                    <h2>fight for pride</h2>
+                    <audio controls class="audio">
+                        <source src="audio/fight for pride.wav">
+                    </audio>
+                </div>
+
+                <div class="pd">
+                    <h2>カメとメロンパン</h2>
+                    <audio controls class="audio">
+                        <source src="audio/カメとメロンパン.wav">
+                    </audio>
+                </div>
+
+                <div class="pd">
+                    <h2>理想郷</h2>
+                    <audio controls class="audio">
+                        <source src="audio/理想郷.wav">
+                    </audio>
+                </div>
+
+                <div class="pd" id="birthday">
+                    <h2>Birthday Without You</h2>
+                    <audio controls class="audio">
+                        <source src="audio/BWY brass.mp3">
+                    </audio>
+                </div>
+                <video src="../pandango-factory/Birthday Without You.mp4" controls></video>
+            </div>
         </div>
-
-        <div class="after the sun">
-            <h2>after the sun</h2>
-            <audio controls class="audio">
-                <source src="audio/after the sun2.wav">
-            </audio>
-        </div>
-
-        <div class="The dancing fairies">
-            <h2>The dancing fairies</h2>
-            <audio controls class="audio">
-                <source src="audio/The dancing fairies.wav">
-            </audio> 
-        </div>
-
-        <div class="Rituals of sadness">
-            <h2>Rituals of sadness</h2>
-            <audio controls class="audio">
-                <source src="audio/Rituals of sadness.wav">
-                <audio controls>
-        </div>
-
-        <div class="goryuusai">
-            <h2>五龍祭</h2>
-            <audio controls class="audio">
-                <source src="audio/五龍祭.wav">
-            </audio>
-        </div>
-
-        <div class="recollection">
-            <h2>recollection</h2>
-            <audio controls class="audio">
-                <source src="audio/recollection.wav"> 
-            </audio>
-        </div>
-
-        <div class="FightForPride">
-            <h2>fight for pride</h2>
-            <audio controls class="audio">
-                <source src="audio/fight for pride.wav">  
-            </audio>
-        </div>
-
-        <div class="kamepan">
-            <h2>カメとメロンパン</h2>
-            <audio controls class="audio">
-                <source src="audio/カメとメロンパン.wav"> 
-            </audio>
-        </div>
-
-        <div class="risou">
-            <h2>理想郷</h2>
-            <audio controls class="audio">
-                <source src="audio/理想郷.wav"> 
-            </audio>
-        </div>
-
-        <div class="bwy">
-            <h2>Birthday Without You</h2>
-            <audio controls class="audio">
-                <source src="audio/BWY brass.mp3">
-            </audio>
-            <video src="../pandango-factory/Birthday Without You.mp4" controls width="90%"></video>
-        </div>
-        <div class="scrollpanda" id="page-top"></div>
-        <script>
-            $(function () {
-                // TOPに戻るボタン
-                var topBtn = $('#page-top');
-                topBtn.hide();
-
-                //スクロールが100に達したらボタン表示
-                $(window).scroll(function () {
-                    var w = $(window).width();
-                    if ($(this).scrollTop() > 100) {
-                        topBtn.fadeIn();
-                    } else {
-                        topBtn.fadeOut();
-                    }
-                });
-
-                //スムーススクロールでページトップへ
-                topBtn.click(function () {
-                    $('body,html').animate({
-                        scrollTop: 0
-                    }, 500);
-                    return false;
-                });
-            });
-        </script>
+    </div>
+    <section class="bannar">
+        <a href="https://www.freem.ne.jp/brand/11474" target="_blank" class="aioseop-link">
+            <img src="img/bnr_game.png" alt="バナー">
+        </a>
+        <a href="https://www.youtube.com/channel/UCDtrJ3Cus6UiKL3O9CWYJWg" target="_blank" rel="noopener">
+            <img src="img/bnr_youtube.png" alt="バナー">
+        </a>
+        <a href="https://twitter.com/___danGOdanGO" target="_blank" class="aioseop-link">
+            <img src="img/bnr_twitter.png" alt="バナー">
+        </a>
+    </section>
+    <div class="scroll">
+        <a href="#top">
+            <div class="scrollpanda"></div>
+        </a>
     </div>
     <footer>
-        <a href="index.html" class="right">HOME</a>
-        <a href="game.html" class="right">GAME</a>
-        <a href="picture.html" class="right">PICTURE</a>
-        <!-- <a href="portfolio2.html" class="right">portfolio</a> -->
-        <a href="https://www.youtube.com/channel/UCDtrJ3Cus6UiKL3O9CWYJWg" class="right" target="_blank"
-        rel="noopener">YOUTUBE</a>
-        <a rel="noopener" href="https://twitter.com/___danGOdanGO" target="_blank" class="aioseop-link">TWITTER</a>
+        <div class="footer">
+            <p>ⓒpandango</p>
+        </div>
     </footer>
 </body>
 
